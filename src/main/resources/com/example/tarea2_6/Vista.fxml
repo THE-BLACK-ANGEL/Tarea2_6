@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" />
+<AnchorPane id="contenedor" fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="70.0" prefWidth="640.0">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="640.0" pickOnBounds="true">
+               <image>
+                  <Image url="@com.example.tarea2_6.imagenes/Nubes.jpg" />
+               </image>
+            </ImageView>
+         </children></VBox>
+      <ImageView fitHeight="70.0" fitWidth="640.0" layoutY="410.0" pickOnBounds="true">
+         <image>
+            <Image url="@com.example.tarea2_6.imagenes/Nubes.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="47.0" layoutY="99.0" prefHeight="17.0" prefWidth="53.0" text="CIUDAD : " />
+      <TextField fx:id="ciudad" layoutX="100.0" layoutY="95.0" />
+      <Button fx:id="botonBuscar" layoutX="249.0" layoutY="95.0" mnemonicParsing="false" text="Buscar" />
+      <TableView fx:id="tablaTiempo" layoutX="47.0" layoutY="140.0" prefHeight="84.0" prefWidth="550.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="TOP" prefHeight="70.0" prefWidth="640.0" text="EL TIEMPO CON ANGEL MIGUEL MUÑOZ CASTAÑO">
+         <font>
+            <Font name="Segoe Print" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

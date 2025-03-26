@@ -11,7 +11,7 @@ public class Aplicacion extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Aplicacion.class.getResource("Vista.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
+        Scene scene = new Scene(fxmlLoader.load(), 640, 480);
         scene.getStylesheets().add(Aplicacion.class.getResource("Estilo.css").toExternalForm());
         stage.setTitle("Programa para el uso de API publica");
         stage.setScene(scene);
@@ -19,6 +19,5 @@ public class Aplicacion extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
-    }
+        launch();}
 }
