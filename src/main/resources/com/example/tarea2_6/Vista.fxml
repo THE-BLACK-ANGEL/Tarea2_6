@@ -15,26 +15,58 @@
                </image>
             </ImageView>
          </children></VBox>
-      <ImageView fitHeight="120.0" fitWidth="640.0" layoutY="360.0" pickOnBounds="true">
+      <ImageView fx:id="imagen" fitHeight="100.0" fitWidth="640.0" layoutY="380.0" pickOnBounds="true">
          <image>
             <Image url="@com.example.tarea2_6.imagenes/Nubes.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="47.0" layoutY="99.0" prefHeight="17.0" prefWidth="53.0" text="CIUDAD : " />
-      <TextField fx:id="tfCiudad" layoutX="100.0" layoutY="95.0" promptText="Introduzca una ciudad..." />
-      <Button fx:id="botonBuscar" layoutX="249.0" layoutY="95.0" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
-      <TableView fx:id="tablaTiempo" layoutX="47.0" layoutY="140.0" prefHeight="84.0" prefWidth="550.0">
-        <columns>
-          <TableColumn fx:id="colCiudad" prefWidth="75.0" text="Ciudad" />
-          <TableColumn fx:id="colGrados" prefWidth="75.0" text="ºC" />
-            <TableColumn fx:id="colClima" prefWidth="75.0" text="Clima" />
-            <TableColumn fx:id="colPrecipitacion" prefWidth="324.0" text="Probabilidad precipitación" />
-        </columns>
-      </TableView>
-      <Label alignment="CENTER" contentDisplay="TOP" prefHeight="70.0" prefWidth="640.0" text="EL TIEMPO CON ANGEL MIGUEL MUÑOZ CASTAÑO">
+      <Label layoutX="55.0" layoutY="94.0" prefHeight="32.0" prefWidth="91.0" text="CIUDAD : ">
+         <font>
+            <Font name="MV Boli" size="18.0" />
+         </font></Label>
+      <TextField fx:id="tfCiudad" layoutX="146.0" layoutY="95.0" prefHeight="25.0" prefWidth="157.0" promptText="Introduzca una ciudad...">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button fx:id="botonBuscar" layoutX="303.0" layoutY="95.0" mnemonicParsing="false" onAction="#buscar" prefHeight="30.0" prefWidth="63.0" text="Buscar">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label alignment="CENTER" contentDisplay="TOP" prefHeight="80.0" prefWidth="640.0" text="EL TIEMPO CON ANGEL MIGUEL MUÑOZ CASTAÑO">
          <font>
             <Font name="Segoe Print" size="22.0" />
          </font>
       </Label>
+      <Label layoutX="75.0" layoutY="165.0" prefHeight="20.0" prefWidth="57.0" text="Ciudad :">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font></Label>
+      <Label layoutX="67.0" layoutY="195.0" prefHeight="25.0" prefWidth="103.0" text="Temperatura :">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font></Label>
+      <Label layoutX="79.0" layoutY="254.0" prefHeight="20.0" prefWidth="44.0" text="Cielo :">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font></Label>
+      <Label layoutX="66.0" layoutY="226.0" prefHeight="25.0" prefWidth="103.0" text="Precipitación : ">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font></Label>
+      <TextField fx:id="tfCiudad2" editable="false" layoutX="133.0" layoutY="165.0" prefHeight="25.0" prefWidth="116.0" />
+      <TextField fx:id="tfGrados" editable="false" layoutX="166.0" layoutY="194.0" prefHeight="25.0" prefWidth="116.0" />
+      <TextField fx:id="tfPrecipitacion" editable="false" layoutX="166.0" layoutY="226.0" prefHeight="25.0" prefWidth="116.0" />
+      <TextField fx:id="tfClima" editable="false" layoutX="125.0" layoutY="254.0" prefHeight="25.0" prefWidth="116.0" />
+      <Label layoutX="291.0" layoutY="197.0" text="ºC">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="228.0" text="\%">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imagenClima" fitHeight="150.0" fitWidth="200.0" layoutX="391.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
